@@ -77,11 +77,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void showAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Do you want to play again ???");
         builder.setMessage("Game Over\n Your score is: " + scoreCount);
         builder.setNegativeButton("No", (DialogInterface dialogInterface, int i) -> {
             finish();
         });
-        builder.setPositiveButton("Yes", (DialogInterface dialogInterface, int i) -> {
+        builder.setPositiveButton("OK", (DialogInterface dialogInterface, int i) -> {
 
         });
         AlertDialog alertDialog = builder.create();
